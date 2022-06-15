@@ -1,0 +1,17 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db02?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password:
+mybatis:
+  type-aliases-package: com.cherish.pojo
+  mapper-locations: classpath:mybatis/*/*Mapper.xml    # 所有Entity别名类所在包
+
+

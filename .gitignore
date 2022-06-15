@@ -1,0 +1,12 @@
+#默认忽略根据目录下的所有的文件
+/*
+#默认忽略根据目录下的子目录下的所有文件
+/*/*
+#配置不忽略的文件
+!pom.xml
+!.gitignore
+!/cloud-*
+!/cloud-*/src/
+!/cloud-*/pom.xml
+!readme.md
+!/doc/erp.pdm
