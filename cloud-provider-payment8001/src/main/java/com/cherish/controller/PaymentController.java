@@ -39,7 +39,7 @@ public class PaymentController {
     public CommonResult queryByID(@PathVariable("id") Long id) {
         Payment payment = parmentService.queryPaymentByID(id);
         log.info("**********插入的结果" + payment);
-
+        System.out.println("ddd");
         if (payment.equals("") || payment == null) {
             return new CommonResult(400, "查询数据失败", null);
         } else {
